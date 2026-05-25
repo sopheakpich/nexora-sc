@@ -1,0 +1,435 @@
+{
+  "project": {
+    "name": "Nexora SC — HeyGen Ad Video",
+    "description": "Professional Video Ad Production Guide",
+    "platform": "HeyGen AI Video Generator",
+    "format": "60–90 second promotional ad",
+    "goal": "Drive registrations for a video editing skills training event",
+    "version": "1.0.0",
+    "created": "2026-05-25"
+  },
+
+  "master_prompt": {
+    "target_field": "HeyGen Script or AI Script Generator",
+    "text": "Create a professional, high-energy promotional video ad for a Video Editing Masterclass training event. The tone is motivating, modern, and aspirational. The avatar presenter is confident, well-dressed, and speaks directly to aspiring content creators and marketing professionals. Background is a sleek dark studio with subtle animated light accents. The video runs 60–90 seconds. Use dynamic text overlays, smooth scene transitions, and upbeat background music. Include a clear call-to-action at the end to register now."
+  },
+
+  "script": {
+    "total_duration_seconds": 80,
+    "scenes": [
+      {
+        "id": 1,
+        "label": "HOOK",
+        "time_start": "0:00",
+        "time_end": "0:08",
+        "duration_seconds": 8,
+        "direction": "Avatar on screen, direct eye contact, confident tone",
+        "dialogue": "Are your videos being IGNORED — while others go viral?",
+        "emphasis_words": ["IGNORED"]
+      },
+      {
+        "id": 2,
+        "label": "PROBLEM",
+        "time_start": "0:08",
+        "time_end": "0:20",
+        "duration_seconds": 12,
+        "direction": "Slow zoom in, serious tone",
+        "dialogue": "Most creators spend hours editing — but still end up with content that feels flat, unprofessional, and forgettable. You deserve better results from your hard work.",
+        "emphasis_words": ["flat", "unprofessional", "forgettable"]
+      },
+      {
+        "id": 3,
+        "label": "SOLUTION REVEAL",
+        "time_start": "0:20",
+        "time_end": "0:35",
+        "duration_seconds": 15,
+        "direction": "Energy lifts, brighter lighting, avatar smiles",
+        "dialogue": "Introducing the Nexora Video Editing Masterclass — a live, hands-on training event designed to transform the way you edit, produce, and publish video content. In just one day, you will master the techniques that top creators and brands use every single day.",
+        "emphasis_words": ["Nexora Video Editing Masterclass", "one day"]
+      },
+      {
+        "id": 4,
+        "label": "WHAT YOU WILL LEARN",
+        "time_start": "0:35",
+        "time_end": "0:55",
+        "duration_seconds": 20,
+        "direction": "Avatar steps aside — bullet points animate on screen one by one",
+        "dialogue": "Here is exactly what you will learn:",
+        "curriculum": [
+          {
+            "topic": "Professional color grading",
+            "benefit": "make every frame look cinematic"
+          },
+          {
+            "topic": "AI-powered editing workflows",
+            "benefit": "cut your editing time in half"
+          },
+          {
+            "topic": "Motion graphics & text animation",
+            "benefit": "keep viewers hooked"
+          },
+          {
+            "topic": "Audio mixing & sound design",
+            "benefit": "sound as good as you look"
+          },
+          {
+            "topic": "HeyGen & AI video tools",
+            "benefit": "create avatar-led content at scale"
+          },
+          {
+            "topic": "Export & platform optimization",
+            "benefit": "perfect files for every channel"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "label": "SOCIAL PROOF",
+        "time_start": "0:55",
+        "time_end": "1:05",
+        "duration_seconds": 10,
+        "direction": "Testimonial quotes appear as animated cards over avatar",
+        "dialogue": "Join hundreds of creators, marketers, and business owners who have already leveled up their content game with Nexora training.",
+        "emphasis_words": ["hundreds"]
+      },
+      {
+        "id": 6,
+        "label": "CALL TO ACTION",
+        "time_start": "1:05",
+        "time_end": "1:20",
+        "duration_seconds": 15,
+        "direction": "Bold, urgent tone — countdown timer graphic appears",
+        "dialogue": "Seats are limited. This is your moment. Click the link below, register now, and show up ready to create content that DEMANDS attention. We will see you there.",
+        "emphasis_words": ["Seats are limited", "DEMANDS attention"]
+      }
+    ]
+  },
+
+  "heygen_settings": {
+    "avatar": {
+      "style": "Professional Studio",
+      "gender": "Male or Female",
+      "outfit": "Smart casual or business blazer",
+      "skin_hair": "Match your brand or audience demographic",
+      "language": "English",
+      "voice_preset_options": ["Energetic", "Warm", "Confident"],
+      "speaking_rate_percent": {
+        "min": 105,
+        "max": 115,
+        "note": "slightly faster than default"
+      }
+    },
+
+    "background": {
+      "type_options": ["Video loop", "Solid gradient"],
+      "recommended_colors": [
+        { "name": "Deep Navy", "hex": "#0A0E27" },
+        { "name": "Charcoal", "hex": "#1A1A2E" }
+      ],
+      "optional_upload": "Branded event banner image",
+      "blur": false
+    },
+
+    "photos": {
+      "upload_format": ["JPG", "PNG"],
+      "min_resolution": "1280x720px",
+      "upload_location": "HeyGen Media panel or Overlay feature",
+      "add_steps": [
+        "Click 'Media' in the left sidebar",
+        "Upload your images (JPG/PNG, min 1280x720px)",
+        "Drag the image onto the timeline at the correct timestamp",
+        "Set Entry Animation: Fade / Slide / Pop",
+        "Set Duration: 5–8 seconds per image",
+        "Adjust Opacity: 80–100% for feature shots, 50–70% for overlays"
+      ],
+      "timeline": [
+        {
+          "time_start": "0:08",
+          "time_end": "0:18",
+          "image_description": "Frustrated person at laptop",
+          "display_style": "Fade in",
+          "opacity_percent": 60,
+          "layer": "overlay"
+        },
+        {
+          "time_start": "0:20",
+          "time_end": "0:28",
+          "image_description": "Event training room / live audience",
+          "display_style": "Slide in from right",
+          "opacity_percent": 100,
+          "layer": "feature"
+        },
+        {
+          "time_start": "0:35",
+          "time_end": "0:40",
+          "image_description": "Color grading software screenshot",
+          "display_style": "Pop-in with scale animation",
+          "opacity_percent": 100,
+          "layer": "feature"
+        },
+        {
+          "time_start": "0:40",
+          "time_end": "0:45",
+          "image_description": "AI dashboard / HeyGen interface",
+          "display_style": "Pop-in with scale animation",
+          "opacity_percent": 100,
+          "layer": "feature"
+        },
+        {
+          "time_start": "0:45",
+          "time_end": "0:50",
+          "image_description": "Motion graphics example frame",
+          "display_style": "Pop-in with scale animation",
+          "opacity_percent": 100,
+          "layer": "feature"
+        },
+        {
+          "time_start": "0:55",
+          "time_end": "1:05",
+          "image_description": "Smiling student / participant",
+          "display_style": "Corner card, bottom-left",
+          "opacity_percent": 90,
+          "layer": "corner_card"
+        },
+        {
+          "time_start": "1:05",
+          "time_end": "1:15",
+          "image_description": "Event poster / registration QR code",
+          "display_style": "Full-screen fade",
+          "opacity_percent": 100,
+          "layer": "fullscreen"
+        },
+        {
+          "time_start": "1:15",
+          "time_end": "1:20",
+          "image_description": "Nexora SC brand logo",
+          "display_style": "Center, fade out",
+          "opacity_percent": 100,
+          "layer": "logo"
+        }
+      ]
+    },
+
+    "text_overlays": {
+      "font_options": ["Montserrat Bold", "Poppins ExtraBold"],
+      "colors": {
+        "primary": "#FFFFFF",
+        "accent_gold": "#FFD700",
+        "accent_urgent": "#FF4500"
+      },
+      "animation_options": ["Typewriter", "Slide Up", "Fade In"],
+      "cards": [
+        {
+          "time_start": "0:00",
+          "time_end": "0:08",
+          "text": "WATCH THIS IF YOU WANT VIRAL VIDEOS",
+          "style": "Bold white",
+          "animation": "Pulsing",
+          "color": "#FFFFFF"
+        },
+        {
+          "time_start": "0:20",
+          "time_end": "0:28",
+          "text": "NEXORA VIDEO EDITING MASTERCLASS",
+          "style": "Gold accent",
+          "animation": "Slide Up",
+          "color": "#FFD700"
+        },
+        {
+          "time_start": "0:35",
+          "time_end": "0:45",
+          "text": "WHAT YOU'LL MASTER:",
+          "style": "White uppercase",
+          "animation": "Fade In",
+          "color": "#FFFFFF"
+        },
+        {
+          "time_start": "0:55",
+          "time_end": "1:05",
+          "text": "500+ Creators Trained",
+          "style": "Green badge, bottom bar",
+          "animation": "Slide Up",
+          "color": "#00C851"
+        },
+        {
+          "time_start": "1:05",
+          "time_end": "1:15",
+          "text": "LIMITED SEATS — REGISTER NOW",
+          "style": "Red urgent banner",
+          "animation": "Flash",
+          "color": "#FF4500"
+        },
+        {
+          "time_start": "1:15",
+          "time_end": "1:20",
+          "text": "[Your Event Date & Location]",
+          "style": "White subtitle",
+          "animation": "Fade In",
+          "color": "#FFFFFF"
+        }
+      ]
+    },
+
+    "audio": {
+      "background_music": {
+        "genre": "Upbeat Corporate",
+        "source_options": ["Pixabay", "Mixkit", "YouTube Audio Library"],
+        "search_term": "corporate motivational upbeat",
+        "volume_percent": {
+          "min": 20,
+          "max": 30
+        },
+        "fade_out_at": "1:10"
+      },
+      "avatar_voice": {
+        "volume_percent": 100
+      }
+    },
+
+    "transitions": [
+      {
+        "from_scene": 1,
+        "to_scene": 2,
+        "type": "Fade to Black"
+      },
+      {
+        "from_scene": 2,
+        "to_scene": 3,
+        "type": "Wipe Left"
+      },
+      {
+        "from_scene": 3,
+        "to_scene": 4,
+        "type": "Zoom Out"
+      },
+      {
+        "from_scene": 4,
+        "to_scene": 5,
+        "type": "Slide Up"
+      },
+      {
+        "from_scene": 5,
+        "to_scene": 6,
+        "type": "Flash White → Fade In"
+      }
+    ],
+
+    "export": {
+      "resolution": "1080p",
+      "dimensions": "1920x1080",
+      "aspect_ratios": [
+        {
+          "ratio": "16:9",
+          "platforms": ["YouTube", "Facebook"]
+        },
+        {
+          "ratio": "9:16",
+          "platforms": ["Instagram Reels", "TikTok"]
+        }
+      ],
+      "frame_rate": "30fps",
+      "format": "MP4",
+      "quality": "Maximum"
+    }
+  },
+
+  "photo_sourcing": {
+    "download_specs": {
+      "min_resolution": "1280x720px",
+      "formats": ["JPG", "PNG"]
+    },
+    "stock_sources": [
+      {
+        "category": "Training event",
+        "search_term": "workshop audience learning",
+        "source": "Unsplash.com"
+      },
+      {
+        "category": "Video editing",
+        "search_term": "video editing software computer",
+        "source": "Pexels.com"
+      },
+      {
+        "category": "AI tools",
+        "search_term": "artificial intelligence dashboard",
+        "source": "Pixabay.com"
+      },
+      {
+        "category": "Happy creator",
+        "search_term": "content creator smiling camera",
+        "source": "Unsplash.com"
+      },
+      {
+        "category": "Laptop frustrated",
+        "search_term": "person stressed laptop work",
+        "source": "Pexels.com"
+      }
+    ]
+  },
+
+  "workflow_checklist": [
+    { "step": 1,  "task": "Script pasted into the HeyGen script editor",           "done": false },
+    { "step": 2,  "task": "Avatar selected and voice previewed",                    "done": false },
+    { "step": 3,  "task": "Background set (dark studio or branded image)",          "done": false },
+    { "step": 4,  "task": "All photos uploaded to Media library",                   "done": false },
+    { "step": 5,  "task": "Photos placed on timeline at correct timestamps",        "done": false },
+    { "step": 6,  "task": "Text overlays added with correct fonts and colors",      "done": false },
+    { "step": 7,  "task": "Background music uploaded and volume set to 25%",        "done": false },
+    { "step": 8,  "task": "Transitions configured between each scene",              "done": false },
+    { "step": 9,  "task": "Export resolution set to 1080p MP4",                    "done": false },
+    { "step": 10, "task": "Video preview played through from start to finish",      "done": false },
+    { "step": 11, "task": "CTA link / QR code visible and readable in final frame", "done": false }
+  ],
+
+  "advanced_tips": [
+    {
+      "id": 1,
+      "title": "Use Talking Photo for testimonials",
+      "detail": "Upload a real participant's photo and use HeyGen's Talking Photo feature to animate it with a quote. This adds credibility without needing video footage."
+    },
+    {
+      "id": 2,
+      "title": "Clone your own voice",
+      "detail": "If you have 30+ seconds of your own voice recording, use HeyGen Voice Clone to make the avatar sound like you personally."
+    },
+    {
+      "id": 3,
+      "title": "A/B test two versions",
+      "detail": "Create Version A with an urgent hook ('Are your videos being ignored?') and Version B with an aspirational hook ('Imagine your videos getting 100K views'). Run both as ads and compare click-through rates.",
+      "versions": {
+        "A": {
+          "hook_type": "Urgent",
+          "hook_text": "Are your videos being ignored?"
+        },
+        "B": {
+          "hook_type": "Aspirational",
+          "hook_text": "Imagine your videos getting 100K views"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Add subtitles",
+      "detail": "Enable HeyGen's auto-caption feature. 85% of social media video is watched without sound. Captions keep viewers engaged and boost completion rates.",
+      "stat": "85% of social media video is watched without sound"
+    },
+    {
+      "id": 5,
+      "title": "Brand consistency",
+      "detail": "Upload your brand kit (logo PNG with transparent background, brand colors hex codes) into HeyGen's Brand Kit settings so every element stays on-brand.",
+      "brand_kit_items": [
+        "Logo PNG with transparent background",
+        "Primary brand color hex codes",
+        "Secondary brand color hex codes",
+        "Brand fonts"
+      ]
+    }
+  ],
+
+  "meta": {
+    "author": "Nexora SC",
+    "contact": "pheaktra12@gmail.com",
+    "source_document": "heygen-ad-video-prompt.md",
+    "schema_version": "1.0"
+  }
+}
